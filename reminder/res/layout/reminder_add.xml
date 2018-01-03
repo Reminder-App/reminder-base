@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/txtReminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:gravity="right"
+            android:text="@string/reminderName"
+            android:width="70dip" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/edtReminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/txtReminder"
+            android:hint="@string/reminderNameTip"
+            android:width="290dip" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/txtDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/edtReminder"
+            android:layout_marginTop="10dip"
+            android:gravity="right"
+            android:text="@string/reminderDetails"
+            android:width="70dip" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/edtDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtReminder"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/txtDetails"
+            android:hint="@string/reminderDetailsTip"
+            android:width="290dip" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/edtDetails"
+            android:layout_marginTop="10dip"
+            android:gravity="right"
+            android:text="@string/reminderDate"
+            android:width="70dip" >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/spinnerDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtDetails"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/txtDate"
+            android:minWidth="290dip" >
+        </Spinner>
+
+        <!--
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/spinnerDate"
+        android:layout_marginTop="10dip"
+        android:gravity="right"
+        android:text="@string/reminderDate"
+        android:width="70dip" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/selectedDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerDate"
+        android:layout_marginLeft="5dip"
+        android:layout_toRightOf="@id/txtDate"
+        android:clickable="true"
+        android:focusable="false"
+        android:inputType="date"
+        android:onClick="onClick"
+        android:text="@string/reminderDateBlank"
+        android:width="290dip" />
+        -->
+
+        <TextView
+            android:id="@+id/txtTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/spinnerDate"
+            android:layout_marginTop="10dip"
+            android:gravity="right"
+            android:text="@string/reminderHour"
+            android:width="70dip" />
+
+        <Spinner
+            android:id="@+id/spinnerTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinnerDate"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/txtTime"
+            android:minWidth="290dip" >
+        </Spinner>
+
+        <!--
+         <EditText
+        android:id="@+id/selectedTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerDate"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="10dip"
+        android:layout_toRightOf="@id/txtTime"
+        android:inputType="time"
+        android:focusable="false"
+        android:onClick="onClick"
+        android:text="@string/reminderHourBlank"
+        android:width="290dip" />
+        -->
+
+        <TextView
+            android:id="@+id/txtPriority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/spinnerTime"
+            android:layout_marginTop="10dip"
+            android:gravity="right"
+            android:text="@string/reminderPriority"
+            android:width="70dip" >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/spinnerPriorities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinnerTime"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/txtPriority"
+            android:minWidth="290dip" >
+        </Spinner>
+
+        <TextView
+            android:id="@+id/txtCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/spinnerPriorities"
+            android:layout_marginTop="10dip"
+            android:gravity="right"
+            android:text="@string/reminderCategory"
+            android:width="70dip" >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/spinnerCategories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinnerPriorities"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/txtCategory"
+            android:minWidth="290dip" >
+        </Spinner>
+
+        <TextView
+            android:id="@+id/txtAddgCalendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/spinnerCategories"
+            android:gravity="right"
+            android:text="@string/googleCalendar"
+            android:width="70dip" >
+        </TextView>
+
+        <CheckBox
+            android:id="@+id/cbCalendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinnerCategories"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/txtAddgCalendar"
+            android:checked="false"
+            android:gravity="right" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtAddgCalendar"
+            android:gravity="center_vertical" >
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:onClick="btnSave_click"
+                android:text="@string/saveButton" >
+            </Button>
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:onClick="btnCancel_click"
+                android:text="@string/cancelButton" >
+            </Button>
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

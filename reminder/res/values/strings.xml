@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="hello">Hello lembretes!</string>
+    <string name="app_name">Lembretes</string>
+    <string name="add">Add</string>
+    <string name="seacrh">Search</string>
+    <!-- Layout reminder_add -->
+    <string name="reminderName">Tarefa</string>
+    <string name="reminderNameTip">Sua tarefa</string>
+    <string name="reminderDetails">Detalhes</string>
+    <string name="reminderDetailsTip">Detalhes da tarefa</string>
+    <string name="reminderDate">Data</string>
+    <string name="reminderDateTip">DD-MM-AAAA</string>
+    <string name="reminderDateBlank">Sem Data</string>
+    <string name="reminderDateButton">Escolher Data</string>
+    <string name="reminderHour">Hora</string>
+    <string name="reminderHourTip">HH:MM</string>
+    <string name="reminderHourBlank">Sem Horário</string>
+    <string name="reminderHourButton">Escolher Horário</string>
+    <string name="reminderPriority">Prioridade</string>
+    <string name="reminderPriorityTip">Prioridade do lembrete</string>
+    <string name="reminderCategory">Categoria</string>
+    <string name="saveButton">Salvar</string>
+    <string name="cancelButton">Cancelar</string>
+    <!-- Reminder_list_fragment -->
+    <string name="reminder_list_late">ATRASADAS</string>
+    <string name="reminder_list_today">HOJE</string>
+    <string name="reminder_list_nextdays">PRÓXIMOS DIAS</string>
+    <string name="reminder_list_nodate">SEM DATA</string>
+    <!-- Category_list_fragment -->
+    <string name="addCategory">Adicionar</string>
+    <!-- category_dialog -->
+    <string name="dialog_category_cancel">Cancelar</string>
+    <!-- add_category_dialog -->
+    <string name="dialog_addcategory_name">Nome da Categoria</string>
+    <string name="dialog_addcategory_title">Adicionar Categoria:</string>
+    <string name="dialog_addcategory_add">Adicionar</string>
+    <!-- edit_category_dialog -->
+    <string name="dialog_editcategory_title">Editar Categoria:</string>
+    <string name="dialog_editcategory_save">Salvar</string>
+    <!-- Activities title labels -->
+    <string name="title_activity_reminder_add">Adicionar</string>
+    <string name="title_activity_reminder_edit">Editar</string>
+    <!-- ReminderMain context menu -->
+    <string name="context_menu_edit">Editar</string>
+    <string name="context_menu_share">Compartilhar</string>
+    <string name="context_menu_delete">Excluir</string>
+    <string name="context_menu_reminder_title">Lembrete</string>
+    <string name="context_menu_category_title">Categoria</string>
+    <!-- Action Bar titles -->
+    <string name="menu_addReminder">Adicionar</string>
+    <string name="menu_searchReminder">Procurar</string>
+    <string name="googleCalendar">Google Calendar</string>
+</resources>

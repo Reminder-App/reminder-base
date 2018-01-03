@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#999999"
+    android:orientation="vertical" >
+
+    <!-- List of Categories -->
+
+    <LinearLayout
+        android:id="@+id/listCategories"
+        android:layout_width="160dp"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="0dp"
+        android:background="#DBDBDB"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <!-- List of Reminders -->
+
+    <LinearLayout
+        android:id="@+id/listReminders"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="1dp"
+        android:layout_toRightOf="@id/listCategories"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</RelativeLayout>
